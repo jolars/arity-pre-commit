@@ -1,0 +1,15 @@
+- id: arity-format
+  name: arity format
+  description: "Format R files with `arity format`."
+  entry: arity format --force-exclude
+  language: python
+  files: '\.[rR]$'
+  require_serial: true
+
+- id: arity-lint
+  name: arity lint
+  description: "Lint R files with `arity lint` (add `args: [--fix]` to apply safe autofixes)."
+  entry: arity lint --force-exclude
+  language: python
+  files: '\.[rR]$'
+  require_serial: true
