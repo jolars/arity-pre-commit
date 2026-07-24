@@ -27,7 +27,10 @@ jobs:
         shell: bash
         run: |
           hook_repo="$PWD"
-          sandbox="$(mktemp -d)"
+          # Use RUNNER_TEMP so the sandbox is on the same drive as the
+          # checkout; pre-commit needs a relative path between the two,
+          # which fails across drives on Windows (C: vs D:).
+          sandbox="$(mktemp -d -p "$RUNNER_TEMP")"
           cd "$sandbox"
           git init -q
           git config user.email ci@example.com
