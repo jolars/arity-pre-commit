@@ -50,8 +50,9 @@ names staged files explicitly.
 
 ## Versioning
 
-Tags mirror arity releases: `rev: v0.13.0` installs arity 0.13.0. New tags
-are created automatically when a new arity version is published to PyPI.
+Tags mirror arity releases: installing at tag `vX.Y.Z` gives you arity X.Y.Z.
+New tags are created automatically when a new arity version is published to
+PyPI.
 
 ## License
 
