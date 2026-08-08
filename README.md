@@ -20,7 +20,7 @@ Add this to your `.pre-commit-config.yaml`:
 repos:
   - repo: https://github.com/jolars/arity-pre-commit
     # arity version
-    rev: v0.16.0
+    rev: v0.17.0
     hooks:
       # Lint .R files
       - id: arity-lint
