@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "arity-pre-commit"
-version = "0.17.0"
+version = "0.18.0"
 description = "pre-commit hook wrapper for arity"
 license = { text = "MIT" }
 requires-python = ">=3.10"
-dependencies = ["arity==0.17.0"]
+dependencies = ["arity==0.18.0"]
 
 [tool.setuptools]
 py-modules = []
