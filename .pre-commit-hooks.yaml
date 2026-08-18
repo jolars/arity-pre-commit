@@ -1,9 +1,9 @@
 - id: arity-format
   name: arity format
-  description: "Format R files with `arity format`."
+  description: "Format R files and DESCRIPTION with `arity format`."
   entry: arity format --force-exclude
   language: python
-  files: '\.[rR]$'
+  files: '(^|/)(DESCRIPTION|[^/]*\.[rR])$'
   require_serial: true
 
 - id: arity-lint
